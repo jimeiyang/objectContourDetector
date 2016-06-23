@@ -1,6 +1,6 @@
 # objectContourDetector
 
-This is the code for arXiv paper [Object Contour Detection with a Fully Convolutional Encoder-Decoder Network](http://arxiv.org/abs/1603.04530) by Jimei Yang, Brian Price, Scott Cohen, Honglak Lee and Ming-Hsuan Yang.
+This is the code for arXiv paper [Object Contour Detection with a Fully Convolutional Encoder-Decoder Network](http://arxiv.org/abs/1603.04530) by Jimei Yang, Brian Price, Scott Cohen, Honglak Lee and Ming-Hsuan Yang, 2016.
 
 
 ## Contents
@@ -12,7 +12,7 @@ This is the code for arXiv paper [Object Contour Detection with a Fully Convolut
 
 Please follow the instructions below to run the code.
 
-## Requirements
+## Compilation
 * Compile the `Caffe`, `matcaffe` and `pycaffe` in the `caffe-cedn` package. 
 
 ## Training on PASCAL
@@ -26,12 +26,11 @@ Please follow the instructions below to run the code.
 ```
 * Start training by running the script
 ```
-cd ./code/
-matlab train_vgg_cedn_pascal_contour.m
+./code/train.sh
 ```
 * Test the learned network by running the script
 ```
-python test_contour_detection_pascal.py
+./code/test.sh
 ```
 
 ## Testing the pre-trained model
