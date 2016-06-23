@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/dense_inference.dir/ppm.cpp.o CMakeFiles/dense_inference.dir/common.cpp.o CMakeFiles/dense_inference.dir/dense_inference.cpp.o  -o dense_inference  ../src/libdensecrf.a 

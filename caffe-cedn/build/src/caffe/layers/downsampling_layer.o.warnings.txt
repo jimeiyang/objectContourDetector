@@ -1,0 +1,8 @@
+src/caffe/layers/downsampling_layer.cpp: In instantiation of ‘void caffe::DownsamplingLayer<Dtype>::Forward_cpu(const std::vector<caffe::Blob<Dtype>*>&, std::vector<caffe::Blob<Dtype>*>*) [with Dtype = float]’:
+src/caffe/layers/downsampling_layer.cpp:105:1:   required from here
+src/caffe/layers/downsampling_layer.cpp:53:13: warning: unused variable ‘top_count’ [-Wunused-variable]
+   const int top_count = (*top)[0]->count();
+             ^
+src/caffe/layers/downsampling_layer.cpp: In instantiation of ‘void caffe::DownsamplingLayer<Dtype>::Forward_cpu(const std::vector<caffe::Blob<Dtype>*>&, std::vector<caffe::Blob<Dtype>*>*) [with Dtype = double]’:
+src/caffe/layers/downsampling_layer.cpp:105:1:   required from here
+src/caffe/layers/downsampling_layer.cpp:53:13: warning: unused variable ‘top_count’ [-Wunused-variable]

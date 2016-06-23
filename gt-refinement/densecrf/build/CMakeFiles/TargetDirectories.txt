@@ -1,0 +1,8 @@
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/examples/CMakeFiles/dense_inference.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/examples/CMakeFiles/dense_learning.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/src/CMakeFiles/densecrf.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/external/CMakeFiles/lbfgs.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/src/CMakeFiles/optimization.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/examples/CMakeFiles/test_optimization.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/examples/CMakeFiles/test_pairwise.dir
+/Users/jimeiyang/Projects/ObjectSegmentation/densecrf/build/examples/CMakeFiles/test_permutohedral.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/test_permutohedral.dir/test_permutohedral.cpp.o  -o test_permutohedral  ../src/libdensecrf.a ../src/liboptimization.a ../external/liblbfgs.a 

@@ -1,0 +1,20 @@
+src/caffe/layers/sigmoid_bernoulli_layer.cpp: In instantiation of ‘void caffe::SigmoidBernoulliLayer<Dtype>::Forward_cpu(const std::vector<caffe::Blob<Dtype>*>&, std::vector<caffe::Blob<Dtype>*>*) [with Dtype = float]’:
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:68:1:   required from here
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:38:13: warning: unused variable ‘num’ [-Wunused-variable]
+   const int num = bottom[0]->num();
+             ^
+src/caffe/layers/sigmoid_bernoulli_layer.cpp: In instantiation of ‘void caffe::SigmoidBernoulliLayer<Dtype>::Backward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, std::vector<caffe::Blob<Dtype>*>*) [with Dtype = float]’:
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:68:1:   required from here
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:54:15: warning: unused variable ‘num’ [-Wunused-variable]
+     const int num = (*bottom)[0]->num();
+               ^
+src/caffe/layers/sigmoid_bernoulli_layer.cpp: In instantiation of ‘void caffe::SigmoidBernoulliLayer<Dtype>::Forward_cpu(const std::vector<caffe::Blob<Dtype>*>&, std::vector<caffe::Blob<Dtype>*>*) [with Dtype = double]’:
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:68:1:   required from here
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:38:13: warning: unused variable ‘num’ [-Wunused-variable]
+   const int num = bottom[0]->num();
+             ^
+src/caffe/layers/sigmoid_bernoulli_layer.cpp: In instantiation of ‘void caffe::SigmoidBernoulliLayer<Dtype>::Backward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, std::vector<caffe::Blob<Dtype>*>*) [with Dtype = double]’:
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:68:1:   required from here
+src/caffe/layers/sigmoid_bernoulli_layer.cpp:54:15: warning: unused variable ‘num’ [-Wunused-variable]
+     const int num = (*bottom)[0]->num();
+               ^

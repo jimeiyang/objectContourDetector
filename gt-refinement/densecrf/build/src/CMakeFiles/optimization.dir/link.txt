@@ -1,0 +1,2 @@
+/usr/bin/ar cr liboptimization.a  CMakeFiles/optimization.dir/optimization.cpp.o
+/usr/bin/ranlib liboptimization.a
