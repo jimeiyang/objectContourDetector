@@ -1,36 +1,45 @@
 # objectContourDetector
 
-This is the code for arXiv paper [Attribute2Image: Conditional Image Generation from Visual Attributes](https://arxiv.org/abs/1512.00570) by Xinchen Yan, Jimei Yang, Kihyuk Sohn and Honglak Lee.
+This is the code for arXiv paper [Object Contour Detection with a Fully Convolutional Encoder-Decoder Network](http://arxiv.org/abs/1603.04530) by Jimei Yang, Brian Price, Scott Cohen, Honglak Lee and Ming-Hsuan Yang.
 
-Please follow the instructions to run the code.
+
+## Contents
+* This code includes 
+ - the Caffe toolbox for Convolutional Encoder-Decoder Networks (`caffe-cedn`)
+ - scripts for training and testing the PASCAL object contour detector, and 
+ - scripts to refine segmentation anntations based on dense CRF.
+* It is tested on Linux (Ubuntu 14.04) with NVIDIA TITAN X GPU.
+
+Please follow the instructions below to run the code.
 
 ## Requirements
-Attribute2Image requires or works with
-* Mac OS X or Linux
-* NVIDIA GPU
+* Compile the `Caffe`, `matcaffe` and `pycaffe` in the `caffe-cedn` package. 
 
-## Installing Dependency
-* Install [Torch](http://torch.ch)
+## Training on PASCAL
+* Download the pre-processed dataset by running the script
+```
+./data/PASCAL/get_pascal_training_data.sh
+```
+* Download the VGG16 net for initialization by running the script
+```
+./models/get_vgg16_net.sh
+```
+* Start training by running the script
+```
+cd ./code/
+matlab train_vgg_cedn_pascal_contour.m
+```
+* Test the learned network by running the script
+```
+python test_contour_detection_pascal.py
+```
 
-## Data Preprocessing
-* For LFW dataset, please run the script to download the pre-processed dataset
+## Testing the pre-trained model
+* Download the pre-trained model by running the script
 ```
-./prepare_cropped_lfw.sh
+./models/PASCAL/get_pretrained_pascal_net.sh
 ```
 
-* For CelebA dataset, please download the [original dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) and then run the script for pre-processing 
-```
-./prepare_cropped_celeba.sh
-```
-## Training
-* If you want to train the LFW image generator, please run the script (less than 3 hours)
-```
-./demo_lfw.sh
-```
-* If you want to train the CelebA image generator, please run the script (around 24 hours)
-```
-./demo_celeba.sh
-```
 ## Citation
 
 If you find this useful, please cite our work as follows:
