@@ -40,7 +40,7 @@ for iter = 1 : 30
 
     output = caffe('forward', {ims});  
 
-    penalties = single(contours); penalties(contours==0) = 1; penalties = 10*penalties;
+    penalties = single(contours); penalties(contours==0) = 0.1; penalties = 10*penalties;
     [loss_contour, delta_contour] = loss_crossentropy_paired_sigmoid_grad(output{1}, contours, penalties);
     delta_contour = reshape(single(delta_contour),[H,W,1,8]);
     caffe('backward', {delta_contour});
