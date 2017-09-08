@@ -1,3 +1,3 @@
 cd ./models/
-wget https://dl.dropboxusercontent.com/u/483000889/objectContourDetection/vgg-16-encoder-decoder-contour-w10-pascal-iter030.caffemodel
+wget https://www.dropbox.com/s/wcycwvlgwiwcm1l/vgg-16-encoder-decoder-contour-w10-pascal-iter030.caffemodel
 cd ../
