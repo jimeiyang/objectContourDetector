@@ -1,4 +1,4 @@
 cd ./data/PASCAL/
-wget https://dl.dropboxusercontent.com/u/483000889/objectContourDetection/PASCALContourData.tar.gz
+wget https://www.dropbox.com/s/4ut7uju34madtq4/PASCALContourData.tar.gz?dl=0
 tar -xvzf PASCALContourData.tar.gz
 cd ../../
